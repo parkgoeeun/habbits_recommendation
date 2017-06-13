@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+<html>
+<head>
+
+ <center>        
+        <style>
+            .check {
+                text-align: center;
+            }
+        </style>
+    </head>
+<div style="overflow:scroll; width:400px; height:300px; padding:10px; background-color:gold;">
+    <body>
+<script>
+var count=0
+function play(){
+   msg=text.innerText
+   comp=msg.length
+   type()
+}
+function type(){
+   if(count<=comp){
+      text.innerText=msg.substring(0,count++)
+      window.setTimeout("type()",200)
+   }
+   else{
+      couent=0
+      play()
+   }
+}
+</script>
+<body bgcolor="#fffcc" onLoad="play()" text="#5c9900">
+<span id="text">
+ ★분석결과★</span>
+<br><br>
+<script>
+a = "성별";
+b = "이름";
+c = "추천 취미";
+</script>
+</head>
+<body>
+
+    <table border = "1" style = "width : 500; height : 350">
+        <tr>  
+	<th><script>document.write(a);</script></th>
+      <th><script>document.write(b);</script></th>
+      <th><script>document.write(c);</script></th>
+        </tr>
+        <tr>
+	
+            <td> 남 </td> <td> lee.k.y </td><td> Electronic Wheel </td>
+        </tr>
+        <tr>
+            <td colspan = "3"> <div class="content-1-image"> <img src="wheel.jpg" alt="img" /> </div> </td>
+        </tr>
+    
+    </table>
+<br>
+ <center><a href="#" class="more1" onclick="window.close();">CLICK</a>
+   <br>
+</body>
+</html>

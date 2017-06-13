@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+    <head>
+               <link href="css/styles.css" rel="stylesheet" type="text/css">
+       <center>
+	<style>
+            .survey {
+                text-align: center;
+            }
+        </style>
+    </head>
+<div style="overflow:scroll; width:500px; height:500px; padding:10px; background-color:gold;">
+    <body>
+<script>
+var count=0
+function play()
+{
+   msg=text.innerText
+   comp=msg.length
+   type()
+}
+function type(){
+   if(count<=comp){
+      text.innerText=msg.substring(0,count++)
+      window.setTimeout("type()",200)
+   }
+   else{
+      couent=0
+      play()
+   }
+}
+</script>
+<body onLoad="play()" >
+<span id="text">
+ ★설문조사★</span><br><br>
+</body>
+
+        <h2 class="survey"><font size="5">1. 성별</h2>
+        <br>
+   
+        <center><input type="radio" name="url1" value="1" onclick="fn_2(1)"><span class="radio-item">여성</span></center><br>
+        <center><input type="radio" name="url1" value="2" onclick="fn_2(1)"><span class="radio-item">남성</span></center><br>
+        <br>
+   
+        <h2 class="survey">2. 연령대</h2> 
+   
+        <br>
+        <center><input type="radio" name="url2" value="1" onclick="fn_2(2)"><span class="radio-item">10대</span></center><br>
+        <center><input type="radio" name="url2" value="2" onclick="fn_2(2)"><span class="radio-item">20대</span></center><br>
+        <center><input type="radio" name="url2" value="3" onclick="fn_2(2)"><span class="radio-item">30대</span></center><br>
+        <center><input type="radio" name="url2" value="4" onclick="fn_2(2)"><span class="radio-item">40대</span></center><br>
+        <center><input type="radio" name="url2" value="5" onclick="fn_2(2)"><span class="radio-item">50대</span></center><br>
+        <center><input type="radio" name="url2" value="6" onclick="fn_2(2)"><span class="radio-item">그 이상</span></center><br>
+        <br>       
+
+        <h2 class="survey">3. 활동영역</h2>
+        <br>
+        <center><input type="radio" name="url3" value="1" onclick="fn_2(2)"><span class="radio-item">집</span></center><br>
+        <center><input type="radio" name="url3" value="2" onclick="fn_2(2)"><span class="radio-item">집 주변</span></center><br>
+        <center><input type="radio" name="url3" value="3" onclick="fn_2(2)"><span class="radio-item">가까운 시내</span></center><br>
+        <center><input type="radio" name="url3" value="4" onclick="fn_2(2)"><span class="radio-item">먼 곳 돌아다니기</span></center><br>
+        <center><input type="radio" name="url3" value="5" onclick="fn_2(2)"><span class="radio-item">미지의 세계로 탐험</span></center><br>
+        <center><input type="radio" name="url3" value="6" onclick="fn_2(2)"><span class="radio-item">그 이상</span></center><br>
+        <br> 
+   <h2 class="survey">4. 선호하는 인원 수</h2>
+        <br>
+        <center><input type="radio" name="url4" value="1" onclick="fn_2(2)"><span class="radio-item">혼자</span></center><br>
+        <center><input type="radio" name="url4" value="2" onclick="fn_2(2)"><span class="radio-item">2명</span></center><br>
+        <center><input type="radio" name="url4" value="3" onclick="fn_2(2)"><span class="radio-item">3명</span></center><br>
+        <center><input type="radio" name="url4" value="4" onclick="fn_2(2)"><span class="radio-item">4명</span></center><br>
+        <center><input type="radio" name="url4" value="6" onclick="fn_2(2)"><span class="radio-item">그 이상</span></center><br>
+        <br> 
+
+<center><a href="#" class="more1" onclick=window.open("check.html",window.close(),"width=430,height=300,left=500,top=200")>CLICK</a>
+ <br>
+    </body>
+</html>
